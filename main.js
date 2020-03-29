@@ -73,28 +73,6 @@ function createTable(viewportWidth) {
 }
 
 /*
-*   You will need extra divs when going from large -> small viewports, or 
-*   if the page is loaded on a small viewport.
-*/
-function createExtraDivs() {
-  const NUM_DIVS = 6;
-  for (let i = 0; i < NUM_DIVS; i++) {
-    document.body.querySelector('main').append(document.createElement('div'));
-  }
-}
-
-/*
-*   Removes the extra divs when going from small -> large viewports. If the
-*   page is loaded from a large viewport, this will not run.
-*/
-function removeExtraDivs(divs) {
-  const NUM_DIVS_REMOVE = 6;
-  for (let i = NUM_DIVS_REMOVE; i > 0; i--) {
-    divs.pop().remove();
-  }
-}
-
-/*
 *   Adds extra divs to the page if neccessary, and then formats the data to
 *   fit correctly on small viewports.
 */
@@ -138,4 +116,26 @@ function createLargeViewportTable() {
     return div.textContent = largeDeviceRowsCopy.shift();
   });
 
+}
+
+/*
+*   You will need extra divs when going from large -> small viewports, or 
+*   if the page is loaded on a small viewport.
+*/
+function createExtraDivs() {
+  const NUM_DIVS = 6;
+  for (let i = 0; i < NUM_DIVS; i++) {
+    document.body.querySelector('main').append(document.createElement('div'));
+  }
+}
+
+/*
+*   Removes the extra divs when going from small -> large viewports. If the
+*   page is loaded from a large viewport, this will not run.
+*/
+function removeExtraDivs(divs) {
+  const NUM_DIVS_REMOVE = 6;
+  for (let i = NUM_DIVS_REMOVE; i > 0; i--) {
+    divs.pop().remove();
+  }
 }
