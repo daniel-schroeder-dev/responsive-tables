@@ -1,7 +1,7 @@
 {
   "name": "responsive-tables",
   "version": "1.0.0",
-  "description": "12 grid cells representing table data will adjust responsivley and dynamically change the data to still match the original data relationships.",
+  "description": "Grid cells representing table data will adjust responsively and dynamically change the layout of the grid but still match the original data relationships.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
