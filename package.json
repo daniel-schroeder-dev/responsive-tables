@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/daniel-schroeder-dev/responsive-tables/issues"
   },
-  "homepage": "https://github.com/daniel-schroeder-dev/responsive-tables#readme"
+  "homepage": "https://github.com/daniel-schroeder-dev/responsive-tables#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
 }
