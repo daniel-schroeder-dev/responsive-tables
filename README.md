@@ -39,3 +39,6 @@ column3. data 3
 
 ![Responsive Table Screenshot](https://github.com/daniel-schroeder-dev/blob/master/responsive-tables.gif)
 
+## Demo
+
+Demo can be seen at [Responsive Tables](https://daniel-schroeder-dev.github.io/responsive-tables/)
