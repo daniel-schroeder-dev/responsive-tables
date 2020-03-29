@@ -37,7 +37,7 @@ column3. data 3
 
 ## Screenshot
 
-![Responsive Table Screenshot](https://github.com/daniel-schroeder-dev/blob/master/responsive-tables.gif)
+![Responsive Table Screenshot](https://github.com/daniel-schroeder-dev/responsive-tables/blob/master/responsive-tables.gif)
 
 ## Demo
 
