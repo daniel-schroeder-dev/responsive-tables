@@ -1,5 +1,9 @@
 # Responsive Table
 
+Answer to [George's qestion](https://www.udemy.com/course/the-advanced-web-developer-bootcamp/learn/lecture/7306864#questions/9793102)
+
+## Question
+
 I have a problem because I want to have a responsive table
 
 I have this table example and I want to have a different layout when a min screen is reached.
