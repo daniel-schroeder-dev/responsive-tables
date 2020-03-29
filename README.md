@@ -1,6 +1,8 @@
 # Responsive Table
 
-Answer to [George's qestion](https://www.udemy.com/course/the-advanced-web-developer-bootcamp/learn/lecture/7306864#questions/9793102)
+Grid cells representing table data will adjust responsively and dynamically change the layout of the grid but still match the original data relationships.
+
+Answer to [George's question](https://www.udemy.com/course/the-advanced-web-developer-bootcamp/learn/lecture/7306864#questions/9793102)
 
 ## Question
 
