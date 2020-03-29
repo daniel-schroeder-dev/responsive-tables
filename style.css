@@ -24,18 +24,10 @@ div {
   color: white;
 }
 
-.hide-large-screens {
-  display: none;
-}
-
 @media screen and (max-width: 750px) {
 
   main {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .hide-large-screens {
-    display: flex;
   }
 
 }
