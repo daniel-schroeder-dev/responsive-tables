@@ -16,34 +16,22 @@ const smallDeviceColumns = [
   'column-3',
 ];
 
-const smallDeviceRows = [
-  '(c1)row-1',
-  '(c2)row-1',
-  '(c3)row-1',
-  '(c1)row-2',
-  '(c2)row-2',
-  '(c3)row-2',
-  '(c1)row-3',
-  '(c2)row-3',
-  '(c3)row-3',
-];
-
 const largeDeviceColumns = [
   'column-1',
   'column-2',
   'column-3',
 ];
 
-const largeDeviceRows = [
+const rows = [
   '(c1)row-1',
-  '(c1)row-2',
-  '(c1)row-3',
   '(c2)row-1',
-  '(c2)row-2',
-  '(c3)row-3',
   '(c3)row-1',
+  '(c1)row-2',
+  '(c2)row-2',
   '(c3)row-2',
+  '(c1)row-3',
   '(c2)row-3',
+  '(c3)row-3',
 ];
 
 /*
@@ -78,7 +66,7 @@ function createTable(viewportWidth) {
 */
 function createSmallViewportTable() {
   
-  const smallDeviceRowsCopy = [...smallDeviceRows];
+  const rowsCopy = [...rows];
   const smallDeviceColumnsCopy = [...smallDeviceColumns];
   
   let divs = Array.from(document.querySelectorAll('div'));
@@ -89,7 +77,7 @@ function createSmallViewportTable() {
   } 
   
   divs = divs.map((div, i) => {
-    if (i % 2) return div.textContent = smallDeviceRowsCopy.shift();
+    if (i % 2) return div.textContent = rowsCopy.shift();
     return div.textContent = smallDeviceColumnsCopy.shift();
   });
 
@@ -102,7 +90,7 @@ function createSmallViewportTable() {
 function createLargeViewportTable() {
   
   const largeDeviceColumnsCopy = [...largeDeviceColumns];
-  const largeDeviceRowsCopy = [...largeDeviceRows];
+  const rowsCopy = [...rows];
   
   let divs = Array.from(document.querySelectorAll('div'));
   
@@ -113,7 +101,7 @@ function createLargeViewportTable() {
   
   divs = divs.map(div => {
     if (largeDeviceColumnsCopy.length) return div.textContent = largeDeviceColumnsCopy.shift();
-    return div.textContent = largeDeviceRowsCopy.shift();
+    return div.textContent = rowsCopy.shift();
   });
 
 }
